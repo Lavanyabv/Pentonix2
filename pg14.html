@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page14</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpaperswide.com/download/baby_blue_color_gradient_background-wallpaper-1600x1200.jpg');
+        }
+
+        /* Style the navigation bar */
+        .navbar {
+            background-color:#ffc49e;
+            overflow: hidden;
+            height:70px;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            /* margin-top:6px;
+            margin-bottom:6px; */
+            text-decoration: none;
+        }
+
+        /* On hover, the links will change color */
+       
+        /* Badge style */
+        .badge {
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-size: 12px;
+            position: absolute;
+            top: 8px;
+            right: 20px;
+        }
+
+        /* Icons style */
+        .icons {
+            float: right;
+            margin-top: -50px;
+            font-size:40px;
+        }
+
+        #logo{
+            margin-left: -15px;
+            margin-top:7px;
+            padding-left:15px;
+            width:200px;
+            height:45px;
+            border-right:1px;
+            border-radius: 50px;
+            background-color:white;
+            color: #FFD700;
+            font-size: 20px;
+            font-family: "Times New Roman", serif;
+            font-weight: bold;
+            padding-top:7px;
+        }
+
+        .th{
+            color:red;
+            font-style: italic;
+        }
+        
+        .icons .icon-container {
+            float:left;
+            align-items: center;
+            color:black;
+            font-size: 15px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .icon-container i {
+            font-size: 24px;
+        }
+
+        .icons .icon-container:hover{
+            font-weight: bold;
+        }
+
+        i:hover{
+            font-weight:400px;
+        }
+      
+        .content_container{
+            float: left;
+            margin: 20px;
+            height:440px;
+            box-shadow: 10px 10px 15px rgb(192,183,180);
+            border-radius:20px;
+            width:95%;
+            background-color: white;
+
+        }
+        img{
+            height:440px;
+            width:420px;
+            border-radius: 20px;
+            float:left;
+        }
+        img.content_images{
+            width:70px;
+            height:90px;
+            border-radius:0px;
+            
+            padding-left:20px;
+            padding-right: 20px;
+            
+        }
+
+        #para{
+            text-align: justify;
+            position:absolute;
+            left:550px;
+            font-size: 20px;
+            padding-top:-10px;
+        }
+
+        #para1{
+            text-align: justify;
+    
+            position:absolute;
+            left:550px;
+            font-size: 20px;
+        }
+
+        .warning{
+            margin-left:500px;
+            width:55%;
+            height:65px;
+            border: 1px solid red;
+        }
+
+        #warn{
+            float:left;
+            height:50px;
+            width:55px;
+            padding: 5px;
+        }
+        #text-to-convert{
+            width:50%;
+            padding:15px;
+            text-align: justify;
+            font-size:15px;
+        }
+        
+        a{
+            text-decoration: none;
+            font-size:15px;
+        }
+
+        textarea{
+            margin:5px;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navbar">
+        <a href="#"><div id="logo"><span class="th"><sup>The</sup></span>S.T.A.B.L.E<span><sub class="th">Program</sub></span></div></a>
+        <div class="container">
+        <h4>Guideline 1:Neonates Have an Immature Immune System</h4>
+        </div>
+        <div class="icons">
+            <div class="icon-container">
+                <i class="bi bi-pin-angle"></i>
+                <span class="t1">Resources</span>
+            </div>
+            <div class="icon-container">
+                <i class="bi bi-geo-alt"></i>
+                Location
+            </div>
+            <div class="icon-container">
+                <i class="bi bi-box-arrow-right"></i>
+                Exit Module
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content_container">
+        <img src="https://www.cidrap.umn.edu/sites/default/files/styles/article_detail/public/images/news/preemie_boy-jim_lynch.jpg?itok=AP70EZxf">
+        
+            <img style="padding-right: 20px ;"class="content_images" src="data:image/png;base64,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">
+            <p style="font-size: 20px; ">The body has a unique system of defense designed to protect against infections and foreign substances.Exposure to an infectious agent activates a complex series of responses to identify,neutralize,and eliminate the invading organism.</p>
+            <br>
+            <img style="padding-right: 20px ;"class="content_images" src="https://img.freepik.com/premium-vector/bacterial-microorganism-circle-bacteria-germs-colorful-set_92289-310.jpg">
+            <p style="font-size: 20px; ">Neonates have an immature immune system and an impaired ability to effectively eliminate invading organisms.</p>
+            <br>
+            <img style="padding-right: 20px ;"class="content_images" src="https://img.freepik.com/free-vector/little-baby-curl-up_1308-19142.jpg">
+            <p style="font-size: 20px; ">Preterm infants are at even greater diadvantages than term infants.The younger the gestation,the higher the risk for infection and an advance outcome.</p>
+            <br>
+            <div class="warning">
+                <img id="warn" src="https://www.freeiconspng.com/thumbs/warning-icon-png/sign-warning-icon-png-7.png">
+                <p style="font-size:18px">The Younger the gestation,the higher the risk for infection and an advance outcome.</p>
+            </div>  
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <textarea id="text-to-convert" disabled>The body has a unique system of defense designed to protect against infections and foreign substances.Exposure to an infectious agent activates a complex series of responses to identify,neutralize,and eliminate the invading organism.   Neonates have an immature immune system and an impaired ability to effectively eliminate invading organisms.
+                    Preterm infants are at even greater diadvantages than term infants.The younger the gestation,the higher the risk for infection and an advance outcome.
+                    Click next to continue.
+                </textarea>
+                <audio controls style="width:30%;">
+                </audio>
+            <button><i class="bi bi-arrow-right"></i><a href="pg15.html" >Next</a></button>
+                <button id="convert-button">Play</button>
+            </div>
+        
+            <script>
+                const textToConvert = document.getElementById("text-to-convert");
+                const convertButton = document.getElementById("convert-button");
+        
+        // Add click event listener to the convert button
+                convertButton.addEventListener("click", () => {
+                const text = textToConvert.value;
+        
+            // Create a new SpeechSynthesisUtterance object
+                const speech = new SpeechSynthesisUtterance();
+                speech.text = text;
+        
+            // Use the default speech synthesis voice
+                speechSynthesis.speak(speech);
+        });
+
+        
+            </script>
+        </footer>
+</body>
+</html>
